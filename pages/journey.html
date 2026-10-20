@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash | The Journey & Operator Dossier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <!-- Matrix Digital Rain Canvas Background -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Ambient Nebula Glow Orbs -->
+    <div class="ambient-orb orb-purple"></div>
+    <div class="ambient-orb orb-cyan"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-3" href="../index.html">
+                <div class="hud-avatar-wrapper">
+                    <img src="../images/me.jpg" alt="Dash" class="hud-avatar">
+                    <span class="status-dot"></span>
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="brand-name">DASH<span class="text-cyan"></span></span>
+                    <span class="brand-subtitle mono-text">OPERATOR DEV</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="journey.html">The Journey</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="mb-5">
+            <span class="badge bg-success mb-3">DEV DIARY // OPERATOR DOSSIER</span>
+            <h1 class="display-4 fw-bold mb-3">The Dual-Shift Reality</h1>
+            <p class="lead text-secondary" style="max-width: 800px;">
+                Graduate of the Vehicle Program in Eslöv car mechanic and heavy transport trained in Alvesta. With 15
+                years on
+                Swedish roads—currently operating night shifts for Börje Jönssons Åkeri in Helsingborg—I bring
+                absolute reliability, independence, and focus to front-end development.
+            </p>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="cyber-img-frame">
+                    <img src="https://bjtrucks.com/wp-content/uploads/2025/06/23A0114-500x500.jpg"
+                        alt="Night Highway Rig">
+                    <div class="img-hud-caption">// HELSINGBORG NIGHT HAUL & ADR</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cyber-img-frame" style="border-color: rgba(6, 182, 212, 0.4);">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+                        alt="VS Code Setup">
+                    <div class="img-hud-caption" style="color: var(--neon-cyan);">// DAY SHIFT: VS CODE & DOM
+                        ARCHITECTURE</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cyber-img-frame" style="border-color: rgba(139, 92, 246, 0.4);">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+                        alt="Industrial Transport">
+                    <div class="img-hud-caption" style="color: #c084fc;">// HEAVY CARGO & CRANE OPS 18M & ABOVE </div>
+                </div>
+            </div>
+        </div>
+        <!-- INTERACTIVE MEDIA DECK: VIDEO & PHOTO LOGS -->
+        <!-- VISUAL TELEMETRY // MEDIA VAULT -->
+        <div class="my-5 pt-4 border-top border-secondary">
+            <span class="badge bg-info text-dark mb-3">VISUAL TELEMETRY // MEDIA VAULT</span>
+            <h2 class="h3 fw-bold mb-4 text-white">In-Cab Footage & Field Logs</h2>
+            <p class="text-secondary mb-5" style="max-width: 750px;">
+                Real-time captures from Swedish highways, tight dock approaches, and heavy industrial cargo operations.
+            </p>
+
+            <!-- Video Gallery Grid (Fixed paths to root folder) -->
+            <!-- Video Gallery Grid (Permanently Muted) -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="card p-3 h-100">
+                        <div class="cyber-img-frame mb-3" style="height: auto;">
+                            <video class="w-100 rounded" controls muted loop playsinline>
+                                <source src="../video/povtrucking.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3 class="h6 fw-bold text-white">// 01_HIGHWAY_RUN.MP4</h3>
+                        <p class="text-secondary small mb-0">Navigating Swedish regional routes from the driver's
+                            perspective.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3 h-100">
+                        <div class="cyber-img-frame mb-3" style="height: auto;">
+                            <video class="w-100 rounded" controls muted loop playsinline>
+                                <source src="../video/paperrolls.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3 class="h6 fw-bold text-white">// 02_DOCK_APPROACH.MP4</h3>
+                        <p class="text-secondary small mb-0">Securing heavy paper rolls and industrial freight.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3 h-100">
+                        <div class="cyber-img-frame mb-3" style="height: auto;">
+                            <video class="w-100 rounded" controls muted loop playsinline>
+                                <source src="../video/povloading pappermass.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3 class="h6 fw-bold text-white">// 03_CARGO_HANDLING.MP4</h3>
+                        <p class="text-secondary small mb-0">Precision backing and loading procedures at industrial
+                            terminals.</p>
+                    </div>
+                </div>
+            </div>
+<!-- Field Photo Vault (All 12 Operator Photos) -->
+            <h3 class="h4 fw-bold mb-4 text-white">Field Photo Vault</h3>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/housedelevery.jpg" alt="House Delivery">
+                        <div class="img-hud-caption">LB-HOUSE Delivery</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/tightspaces.jpg" alt="Tight Space">
+                        <div class="img-hud-caption" style="color: var(--neon-cyan);">Tight Space Navigation</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/weekendpark.jpg" alt="Weekend Park">
+                        <div class="img-hud-caption" style="color: var(--neon-amber);">Night Rest Stop</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/loading plaster.jpg" alt="Loading Plaster">
+                        <div class="img-hud-caption" style="color: #c084fc;">Gypsum & Plaster</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/dockstruck.jpg" alt="Dock Truck">
+                        <div class="img-hud-caption" style="color: var(--neon-green);">Dock Approach</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/campingtruck.jpg" alt="Camping Truck">
+                        <div class="img-hud-caption" style="color: var(--neon-cyan);">Route Scenery</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/loading big bags.jpg" alt="Big Bags">
+                        <div class="img-hud-caption" style="color: var(--neon-amber);">LOADING BIG BAGS</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/recicyling.jpg" alt="Recycling">
+                        <div class="img-hud-caption" style="color: #c084fc;">Scrap & Recycling</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/BJparking.jpg" alt="Dock Truck 2">
+                        <div class="img-hud-caption" style="color: var(--neon-green);">Terminal View</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/reversunchartedroad.jpeg" alt="Uncharted Road">
+                        <div class="img-hud-caption" style="color: var(--neon-cyan);">Uncharted Road</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/loading potatos.jpg" alt="Potato Loading">
+                        <div class="img-hud-caption" style="color: var(--neon-amber);">Potato Loading</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="cyber-img-frame">
+                        <img src="../images/unloading papperrolls.jpg" alt="Unloading Paper Rolls">
+                        <div class="img-hud-caption" style="color: #c084fc;">Paper Rolls</div>
+                    </div>
+                </div>
+            </div>
+
+                        <div class="timeline-node">
+                            <div class="card p-4">
+                                <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                                    <span class="badge bg-success">2014 — 2024</span>
+                                    <span class="mono-text small text-secondary">JÖNKÖPING / MALMÖ /
+                                        KRISTIANSTAD</span>
+                                </div>
+                                <h3 class="h5 fw-bold text-white mb-2">CR-Johanssons Åkeri (GDL)</h3>
+                                <p class="text-secondary small mb-0">
+                                    10 years of long-haul logistics. Started on the Jönköping–Stockholm night
+                                    line (5 yrs),
+                                    then relocated to Skåne managing vehicle maintenance and hauling
+                                    prefabricated houses
+                                    (LB-Hus), harbor gypsum, steel, paper, and postal freight.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <div class="card p-4">
+                                <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                                    <span class="badge bg-info text-dark">2021 — 2023</span>
+                                    <span class="mono-text small text-secondary">SKÅNE / BLEKINGE /
+                                        STOCKHOLM</span>
+                                </div>
+                                <h3 class="h5 fw-bold text-white mb-2">Industrial & Long-Haul Operations</h3>
+                                <ul class="text-secondary small mb-0 ps-3">
+                                    <li class="mb-1"><strong class="text-white">Sölvesborgs Transport & Marine
+                                            (2023):</strong> Timber, paper rolls, and sheet metal.</li>
+                                    <li class="mb-1"><strong class="text-white">Magnus Anderssons Transport
+                                            (2022–2023):</strong> Gypsum transport from Knauf, Åhus Harbor.</li>
+                                    <li><strong class="text-white">Flexilast (2021–2022):</strong> Bulk sugar
+                                        transport from
+                                        Örtofta refinery with fjärrkörning to Stockholm, Uppsala, and Örebro.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-node">
+                            <div class="card p-4">
+                                <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                                    <span class="badge bg-warning text-dark">2012 — 2014</span>
+                                    <span class="mono-text small text-secondary">MALMÖ / HÄRRYDA / BORÅS</span>
+                                </div>
+                                <h3 class="h5 fw-bold text-white mb-2">PostNord & Mertz Transport AB (Logent)
+                                </h3>
+                                <p class="text-secondary small mb-0">
+                                    Day/night line-haul operations out of Härryda and Borås for PostNord
+                                    (2013–2014), and
+                                    regional distribution across Skåne with Mertz Transport AB in Malmö
+                                    (2012–2013).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 d-flex gap-3">
+                        <a href="../index.html" class="btn btn-outline-light btn-sm px-4 py-2 mono-text">← Back
+                            to Home
+                            Hub</a>
+                        <a href="contact.html" class="btn btn-success btn-sm px-4 py-2 mono-text">Request
+                            References →</a>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer class="text-center py-4 text-secondary small mt-auto">
+        <div class="container">
+            <p class="mb-0 mono-text">&copy; 2026 DASH.DEV // Built with purpose, code, and midnight coffee.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
