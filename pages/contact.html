@@ -71,18 +71,18 @@
 
         <!-- Contact Form Card -->
         <div class="card p-4 p-md-5">
-            <form>
+            <form action="https://formspree.io/f/mljgqjke" method="POST">
                 <div class="mb-3">
                     <label for="name" class="form-label mono-text small text-secondary">Your Name</label>
-                    <input type="text" class="form-control bg-dark text-white border-secondary" id="name" placeholder="Enter name...">
+                    <input type="text" class="form-control bg-dark text-white border-secondary" id="name" name="name" placeholder="Enter name..." required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label mono-text small text-secondary">Email Address</label>
-                    <input type="email5" class="form-control bg-dark text-white border-secondary" id="email" placeholder="name@example.com">
+                    <input type="email" class="form-control bg-dark text-white border-secondary" id="email" name="email" placeholder="name@example.com" required>
                 </div>
                 <div class="mb-4">
                     <label for="message" class="form-label mono-text small text-secondary">Message</label>
-                    <textarea class="form-control bg-dark text-white border-secondary" id="message" rows="4" placeholder="Transmit your message..."></textarea>
+                    <textarea class="form-control bg-dark text-white border-secondary" id="message" name="message" rows="4" placeholder="Transmit your message..." required></textarea>
                 </div>
                 <button type="submit" class="container btn btn-success py-2 mono-text fw-bold text-uppercase">Transmit Message</button>
             </form>
